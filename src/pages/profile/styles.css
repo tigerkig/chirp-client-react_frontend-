@@ -1,0 +1,31 @@
+.profile-container{
+    margin-left: 300px;
+}
+.profile{
+    width: 100%;
+    
+}
+@media (max-width: 1250px){
+    .profile-container{
+        margin-left: 290px;
+    }
+}
+@media (max-width: 1050px){
+    .profile-wrapper  .profile-left{
+        display: none;
+    }
+    .profile-container{
+        width: 100%;
+        margin-left: 0;
+        padding: 1rem 2rem ;
+    }
+    .profile{
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px){
+    .profile-container{
+        padding: 1rem 0;
+    }
+}

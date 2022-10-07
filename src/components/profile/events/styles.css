@@ -1,0 +1,5 @@
+.events-wrapper button:disabled{
+    cursor: not-allowed !important;
+    /* pointer-events: none; */
+    opacity : 70%;
+}

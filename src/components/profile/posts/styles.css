@@ -1,0 +1,13 @@
+
+.profile-about{
+    flex : 1;
+}
+.profile-posts{
+    flex : 2;
+}
+
+@media (max-width: 850px){
+    .profile-about{
+        display: none !important;
+    }
+}

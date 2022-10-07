@@ -1,0 +1,17 @@
+@media (max-width: 1024px){
+    .settings-sidebar{
+        width: fit-content !important;
+    }
+    .settings-content{
+        margin-left: 120px !important;
+    }
+}
+
+@media (max-width: 700px){
+    .settings-content{
+        margin-left: 60px !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        overflow-x: auto !important;
+    }
+}

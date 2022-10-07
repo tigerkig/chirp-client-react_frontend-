@@ -1,0 +1,5 @@
+.primary-circle-svg > svg{
+    /* stroke : var(--pure);
+    fill: var(--pure); */
+    filter:  brightness(0) invert(1);
+}

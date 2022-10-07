@@ -1,0 +1,15 @@
+.dark .create-post svg{
+    filter : brightness(0) invert(90%);
+    /* fill: var(--light);
+    stroke: var(--light); */
+
+}
+
+@media (max-width: 560px){
+    .create-post{
+        padding: 1rem 10px !important;
+    }
+    .create-post > .create-post-footer{
+        display: none;
+    }
+}

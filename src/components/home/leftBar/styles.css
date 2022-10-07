@@ -1,0 +1,6 @@
+.show-less > svg{
+    transform: rotate(180deg);
+}
+.dark .leftBar svg{
+    filter : brightness(0) invert(90%)
+}

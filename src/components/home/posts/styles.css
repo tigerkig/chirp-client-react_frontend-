@@ -1,0 +1,37 @@
+@media (max-width: 550px){
+    .post{
+        padding: 8px !important;
+    }
+    .post-footer{
+        gap: 4px !important;
+    }
+    .post-footer > div > span{
+        font-size: 12px;
+    }
+    .post-footer > div {
+        gap : 8px;
+    }
+    
+    .post-footer > div > div > svg{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 450px){
+    .post-footer > div > div > svg{
+        width: 12px;
+        height: 12px;
+    }
+    .post-footer > div:nth-child(1){
+        justify-content: start !important;
+    }
+    .post-footer > div:nth-child(2){
+        justify-content: center !important;
+        margin-left: 12px;
+    }
+    .post-footer > div:nth-child(3){
+        justify-content: end !important;
+    }
+
+}

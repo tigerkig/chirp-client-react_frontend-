@@ -1,0 +1,39 @@
+.contact-item > div:first-child{
+    position: relative;
+}
+.contact-item > div:first-child:after{
+    content: '';
+    background-color: gray;
+    position: absolute;
+    bottom:0;
+    right: -3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid var(--pure);
+}
+.contact-item > div.active:first-child:after{
+    background-color: var(--primary);
+}
+
+@media (min-width: 1600px){
+    .info-bar{
+        width: 250px;
+    }
+}
+@media (max-width: 1600px){
+    .info-bar{
+        width: 210px;
+    }
+}
+@media (max-width: 1360px){
+    .info-bar{
+        width: 200px;
+        right: 250px !important;
+    }
+}
+@media (max-width: 1310px){
+    .info-bar{
+        display: none !important;
+    }
+}

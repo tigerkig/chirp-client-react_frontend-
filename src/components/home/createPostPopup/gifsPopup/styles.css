@@ -1,0 +1,9 @@
+@media (max-width: 450px){
+    .gif-grid{
+        overflow-x: hidden;
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+    .gif-loader{
+        margin-left: 0 !important;
+    }
+}

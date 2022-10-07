@@ -1,0 +1,13 @@
+@media (max-width: 1024px){
+    .watch-menu{
+        display: none;
+    }
+    .watch-videos{
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 500px){
+    
+}

@@ -1,0 +1,111 @@
+html{
+    scroll-snap-type: y mandatory;
+}
+.clips-container{
+    height: calc(100vh - 171px);
+   
+}
+.clips{
+    position: relative;
+    height: calc(100vh - 91px);
+    max-width: 400px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column ;
+    gap: 1.5rem;
+}
+.clips::-webkit-scrollbar{
+    display:none
+}
+.clips{
+    -ms-overflow-style : none;
+    scrollbar-width: none; 
+}
+.clip{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    display: flex ;
+    gap:.5rem;
+}
+.clip-video-container{
+    width: 300px;
+    position: relative;
+}
+.clip-video{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+.clip-owner-details{
+    position: absolute ;
+    bottom:1rem;
+    left: 10px;
+}
+
+.clip-likes-container{
+    height: 100%;
+    position: relative;
+}
+.clip-likes-container > div {
+    position: absolute;
+    bottom : 4rem;
+    left : 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;  
+    /* height: 100%; */ 
+}
+.clip-svg svg{
+    width: 22px;
+    height: 22px;
+}
+.filter-brown img , .filter-brown svg{
+    filter: brightness(0) saturate(100%) invert(12%) sepia(48%) saturate(5480%) hue-rotate(7deg) brightness(99%) contrast(112%);
+}
+.dark .filter-brown img{
+    filter : brightness(0) invert(90%);
+}
+.clip-header{
+    position: absolute;
+    top: 10px;
+    left : 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 1.4rem;
+
+}
+@media (max-width: 500px){
+    .clips{
+        max-width: 320px;
+        margin : 0 auto;
+        gap : 1rem;
+    }
+    .clips svg{
+        color : white !important;
+    }
+    .clip-likes-container {
+        right : 3.5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .clips{
+        max-width: 100%;
+    }
+    .clip-video-container{
+        width: 100%;
+    }
+    .clip , .clip-video{
+        border-radius: 0;
+        gap : 0;
+        object-fit: cover;
+    }
+}

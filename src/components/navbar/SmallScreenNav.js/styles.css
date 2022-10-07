@@ -1,0 +1,126 @@
+.menu-bar .menu-btn{
+    display: none;
+}
+.menu-bar{
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.menu-bar-item{
+    position: relative;
+}
+.dark .menu-bar-item svg{
+    filter : brightness(0) invert(1);
+}
+.menu-bar-item span{
+    display: none ;
+}
+
+/* for dark theme */
+.dark .menu-bar-item > .small-svg{
+    background-color: var(--pure);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dark .menu-bar-item > .small-svg svg{
+    filter: var(--primary);
+    stroke: var(--primary);
+    width: 25px;
+    height: 25px;
+}
+.dark .menu-bar-item.active > .small-svg{
+    background-color: var(--active);
+}
+.dark .menu-bar-item.active > .small-svg svg{
+    filter: var(--primary);
+    stroke: var(--primary);
+}
+
+/* for light theme */
+.menu-bar-item.active > .small-svg{
+    background-color: var(--primary);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-bar-item.active .small-svg svg{
+    stroke : var(--pure);
+    fill: var(--pure);
+    filter:  brightness(0) invert(1);
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.menu-bar-item .small-svg  svg{
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 570px){
+    .menu-bar{
+        background-color: var(--pure);
+        position : fixed ;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid lightgrey;
+    }
+    .dark .menu-bar{
+        background-color: var(--primary);
+        border-top: none;
+    }
+    .menu-bar > div:first-child{
+        gap: 2rem !important;
+    }
+    .dark .menu-bar-item > .small-svg{
+        background-color: transparent;
+    }
+    .dark .menu-bar-item > .small-svg svg{
+        filter : brightness(0) invert(1);    
+    }
+    .dark .menu-bar-item.active > .small-svg{
+        border : none !important;
+        background-color: var(--pure);
+    }
+    .menu-bar > div  {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menu-bar .menu-btn{
+        display: block;
+    }
+    .logo-bar .menu-btn{
+        display: none;
+    }
+}  
+@media (max-width: 500px){
+    .menu-bar > div .small-svg  svg{
+        width: 25px;
+        height: 25px;
+    }
+    .menu-bar-item.active .small-svg svg{
+        width: 25px;
+        height: 25px;
+    }
+
+    .dark .menu-bar > div{
+        gap: 12px !important;
+    }
+    .dark .menu-bar-item .small-svg svg{
+        width: 22px;
+        height: 22px;
+    }
+    
+    .logo-bar{
+        height: 55px !important;
+    }
+    .logo-bar .logo svg{
+        width: 100px;
+    }
+} 

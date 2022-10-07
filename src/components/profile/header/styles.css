@@ -1,0 +1,32 @@
+.small-svg-2.plus > svg{
+    width: 15px !important;
+    height: 15px !important;   
+}
+
+.tabs-container > div:last-child{
+    display: none;
+}
+@media (max-width: 700px){
+    .profile-picture{
+        flex-direction: column;
+        gap : 1rem;
+    }
+    .profile-picture-left > div:nth-child(1){
+        left : 50%;
+        transform: translateX(-50%);
+    }
+    .profile-picture-left > div:nth-child(2){
+        margin-left: 0;
+        margin-top: 65px;
+    }
+    .tabs-list > div:nth-child(7) , .tabs-list > div:nth-child(6) ,
+    .tabs-list > div:nth-child(5) ,.tabs-list > div:nth-child(2){
+        display: none;
+    }
+    .group-tabs .tabs-list > div:nth-child(2) {
+        display: flex;
+    }
+    .tabs-container > div:last-child{
+        display: block;
+    }
+}

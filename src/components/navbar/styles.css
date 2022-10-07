@@ -1,0 +1,12 @@
+.small-screen-nav-container{
+    display: none;
+}
+
+@media (max-width: 1150px){
+    .large-screen-nav-container{
+        display: none;
+    }
+    .small-screen-nav-container{
+        display: block;
+    }
+}

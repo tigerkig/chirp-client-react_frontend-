@@ -1,0 +1,31 @@
+.profile-photos-tab-list > div{
+    position: relative;
+}
+.profile-photos-tab-list > div:hover{
+    color: var(--primary);
+    cursor: pointer;
+}
+.profile-photos-tab-list > div.active{
+    color: var(--primary);
+}
+.dark .profile-photos-tab-list > div.active{
+    color: #CF1D48;
+}
+.profile-photos-tab-list > div:hover{
+    color: #CF1D48;
+    cursor: pointer;
+}
+.profile-photos-tab-list > div.active::after{
+    content : '';
+    position: absolute;
+    bottom : -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 1px;
+    background-color: var(--primary);
+    font-size: 15px;
+}
+.dark .profile-photos-tab-list > div.active::after{
+    background-color: #CF1D48;
+}

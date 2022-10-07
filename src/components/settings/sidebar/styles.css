@@ -1,0 +1,6 @@
+@media (max-width: 800px){
+    .small-svg-2.setting-sidebar-svg > svg{
+        width: 15px;
+        height: 15px;
+    }
+}

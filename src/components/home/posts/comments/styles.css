@@ -1,0 +1,28 @@
+
+.comments {
+    height : fit-content;
+    max-height: 400px;
+    overflow: auto;
+}
+.dark .comments svg{
+    filter : brightness(0) invert(90%);
+}
+
+.comment-right svg{
+    width: 14px;
+    height: 14px;
+}
+.comment-form svg {
+    width : 35px;
+    height: 35px;
+}
+
+@media (max-width: 400px){
+    .comment-form svg {
+        width: 25px;
+        height: 25px;
+    }
+    .comment-form input{
+        width: 90%;
+    }
+}

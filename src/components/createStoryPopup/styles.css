@@ -1,0 +1,15 @@
+.create-story-header svg{
+    width: 40px;
+    height: 40px;
+}
+.create-story-header .setting-svg > svg{
+    width: 35px;
+    height: 35px;
+}
+.story-settings-container svg{
+    width : 25px;
+    height: 25px;
+}
+.dark .create-story-header svg{
+    filter : brightness(0) invert(1);
+}

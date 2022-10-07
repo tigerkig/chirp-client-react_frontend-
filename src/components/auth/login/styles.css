@@ -1,0 +1,14 @@
+.form-container{
+    width: 412px;
+    height: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.dark .form-container {
+    box-shadow: none;
+}
+
+@media (max-width: 470px){
+    .form-container{
+        width: 100%;
+    }
+}

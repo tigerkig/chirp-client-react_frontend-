@@ -1,0 +1,24 @@
+.register-select-box{
+   width: 100%;
+
+}
+.register-select-box > select , .gender-select-box{
+    border:1px solid lightgray;
+    padding: 8px 5px;
+    border-radius: 5px;
+    width: 100%;
+    outline:none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    color: rgb(187, 187, 187);
+}
+.register-select-box > select:focus{
+    border-color:var(--primary);
+}
+.dark .register-select-box > select , .gender-select-box{
+    border:1px solid rgb(71, 71, 71);
+
+}
